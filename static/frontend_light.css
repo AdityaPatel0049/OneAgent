@@ -1,0 +1,55 @@
+/* Light theme for frontend.py */
+html, body, .stApp, .reportview-container, .main, .block-container {
+  background: linear-gradient(180deg,#f7fbff 0%,#ffffff 100%) !important;
+  color: #0f172a !important;
+}
+
+h1, h2, h3, h4, h5, h6, .title {
+  color: #0f172a !important;
+  font-weight: 700;
+}
+
+/* Make text and widget labels readable */
+label, .stText, .stMarkdown, .stTextInput, .stSelectbox, .stRadio {
+  color: #0f172a !important;
+}
+
+input, textarea {
+  background: #ffffff !important;
+  color: #0f172a !important;
+}
+
+.stButton>button {
+  color: #0f172a !important;
+}
+
+.stExpander {
+  background: transparent !important;
+  color: #0f172a !important;
+}
+
+/* Cards and result styles */
+.result-card {
+  padding: 12px 14px;
+  margin-bottom: 12px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(15,23,42,0.06);
+  color: #0f172a;
+  line-height: 1.45;
+}
+.domain-card {
+  padding: 10px 12px;
+  margin-top: 8px;
+  background: #fbfdff;
+  border-radius: 8px;
+  border: 1px solid #e6f0ff;
+}
+.agent-pill {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-weight:700;
+  color: #fff;
+}
+.sentiment-compact { font-size:13px }

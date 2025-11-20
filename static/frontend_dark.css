@@ -1,0 +1,57 @@
+/* Dark theme for frontend.py */
+html, body, .stApp, .reportview-container, .main, .block-container {
+  background: #0b1220 !important;
+  color: #e6eef8 !important;
+}
+
+h1, h2, h3, h4, h5, h6, .title {
+  color: #e6eef8 !important;
+  font-weight: 700;
+}
+
+label, .stText, .stMarkdown, .stTextInput, .stSelectbox, .stRadio {
+  color: #e6eef8 !important;
+}
+
+input, textarea {
+  background: #0f1724 !important;
+  color: #e6eef8 !important;
+  border: 1px solid #1f2a37 !important;
+}
+
+.stButton>button {
+  color: #0b1220 !important;
+  background: #e6eef8 !important;
+}
+
+.stExpander {
+  background: transparent !important;
+  color: #e6eef8 !important;
+}
+
+/* Cards and result styles for dark theme */
+.result-card {
+  padding: 12px 14px;
+  margin-bottom: 12px;
+  background: linear-gradient(180deg,#071021 0%,#0b1724 100%) !important;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(2,6,12,0.6);
+  color: #e6eef8;
+  line-height: 1.45;
+  border-left: 6px solid rgba(255,255,255,0.04);
+}
+.domain-card {
+  padding: 10px 12px;
+  margin-top: 8px;
+  background: #071226 !important;
+  border-radius: 8px;
+  border: 1px solid #0f2230 !important;
+}
+.agent-pill {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-weight:700;
+  color: #fff;
+}
+.sentiment-compact { font-size:13px }
