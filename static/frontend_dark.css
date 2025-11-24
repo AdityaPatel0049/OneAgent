@@ -1,0 +1,149 @@
+/* Dark theme for frontend.py */
+html, body, .stApp, .reportview-container, .main, .block-container {
+  background: #0b1220 !important;
+  color: #e6eef8 !important;
+  font-family: Inter, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, .title {
+  color: #e6eef8 !important;
+  font-weight: 700;
+}
+
+label, .stText, .stMarkdown, .stTextInput, .stSelectbox, .stRadio {
+  color: #e6eef8 !important;
+}
+
+input, textarea {
+  background: #0f1724 !important;
+  color: #e6eef8 !important;
+  border: 1px solid #1f2a37 !important;
+}
+
+.stButton>button {
+  color: #0b1220 !important;
+  background: #e6eef8 !important;
+}
+
+.stExpander {
+  background: transparent !important;
+  color: #e6eef8 !important;
+}
+
+/* Cards and result styles for dark theme */
+.result-card {
+  padding: 14px 16px;
+  margin-bottom: 12px;
+  background: linear-gradient(180deg,#071021 0%,#0b1724 100%) !important;
+  border-radius: 10px;
+  box-shadow: 0 8px 28px rgba(2,6,12,0.6);
+  color: #e6eef8;
+  line-height: 1.5;
+  border-left: 6px solid rgba(255,255,255,0.03);
+  overflow-wrap: anywhere;
+}
+.domain-card {
+  padding: 12px 14px;
+  margin-top: 8px;
+  background: #071226 !important;
+  border-radius: 10px;
+  border: 1px solid #0f2230 !important;
+  font-size: 14px;
+}
+.agent-pill {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-weight:700;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+.sentiment-compact { font-size:13px }
+
+/* Score list inside domain card */
+.domain-card ul { margin: 6px 0 0 18px; padding: 0; }
+.domain-card ul li { margin: 6px 0; }
+.domain-card .score-grid { display:flex;gap:12px;flex-wrap:wrap;margin-top:8px }
+.domain-card .score-pill { background:linear-gradient(180deg,#071226 0%,#0b1724 100%);border:1px solid #0f2230;padding:6px 8px;border-radius:8px;font-weight:700 }
+
+/* Main container width and spacing */
+.block-container { max-width: 920px !important; margin: 18px auto !important; }
+.stSidebar { padding-top: 18px }
+
+code { background: rgba(255,255,255,0.03); padding: 2px 6px; border-radius:6px; }
+
+/* Hero / header */
+.hero { display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 16px;margin-bottom:10px;background:linear-gradient(90deg, rgba(59,130,246,0.06), rgba(139,92,246,0.03));border-radius:12px }
+.hero-left { display:flex;align-items:center;gap:12px }
+.hero-logo { font-size:30px; padding:10px;background:linear-gradient(135deg,#2563eb,#7c3aed);border-radius:12px;color:white;font-weight:800;box-shadow:0 6px 18px rgba(15,23,42,0.6)}
+.hero-title { font-size:20px;font-weight:800;color:#e6eef8 }
+.hero-sub { color: #9fb0c8;font-size:13px;margin-top:2px }
+.hero-right .hero-cta { text-align:right }
+.cta-note { font-size:13px;color:#e6eef8;opacity:0.9 }
+
+/* Buttons / CTA */
+.primary-btn { background: linear-gradient(90deg,#7c3aed,#06b6d4); color: #fff; padding:8px 14px; border-radius:999px; border:none; cursor:pointer; font-weight:700 }
+
+/* Card hover */
+.result-card:hover { transform: translateY(-4px); box-shadow: 0 20px 48px rgba(2,6,12,0.6); transition: all 180ms ease-in-out }
+.domain-card .score-pill { transition: transform 150ms ease, box-shadow 150ms ease }
+.domain-card .score-pill:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgba(0,0,0,0.5) }
+
+/* Sidebar analyzer icons and toggles */
+.analyzer-heading { display:flex;align-items:center;gap:10px;margin:6px 0 }
+.analyzer-icon { width:30px;height:30px;display:inline-flex;align-items:center;justify-content:center;border-radius:8px;background:linear-gradient(135deg,#2563eb,#7c3aed);color:#fff;font-weight:800;box-shadow:0 6px 14px rgba(15,23,42,0.6);transition: transform 180ms ease, box-shadow 180ms ease }
+.analyzer-heading:hover .analyzer-icon { transform: translateY(-3px) scale(1.06); box-shadow:0 12px 30px rgba(15,23,42,0.8) }
+
+.stSidebar input[type="checkbox"], .stSidebar .stSlider>div, .stSidebar .stSelectbox>div { transition: box-shadow 140ms ease, transform 140ms ease }
+.stSidebar input[type="checkbox"]:hover, .stSidebar .stSlider>div:hover, .stSidebar .stSelectbox>div:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(0,0,0,0.45) }
+
+.stSidebar .stExpander { transition: background 180ms ease }
+.stSidebar .stExpander:hover { background: rgba(255,255,255,0.02) }
+
+/* ------- Additional dark theme enhancements (overrides) ------- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
+html, body, .stApp, .reportview-container, .main, .block-container { font-family: 'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+
+/* Glassy dark cards */
+.result-card { background: linear-gradient(180deg, rgba(7,18,34,0.75), rgba(11,23,36,0.85)) !important; backdrop-filter: blur(6px) saturate(120%); border-radius:14px !important; border:1px solid rgba(255,255,255,0.03) !important; box-shadow:0 14px 40px rgba(2,6,12,0.6) !important; padding:16px 18px !important }
+.domain-card { background: linear-gradient(180deg,#071226 0%,#0b1724 100%) !important; border:1px solid rgba(255,255,255,0.02) !important }
+
+/* Stronger hero presence */
+.hero { padding:18px 20px !important; border-radius:16px !important; box-shadow: 0 12px 36px rgba(2,6,12,0.5) !important }
+.hero-logo { font-size:34px !important; padding:12px 14px !important; border-radius:14px !important }
+.hero-title { font-size:22px !important }
+
+/* Decorative subtle corner shapes for dark */
+.stApp::before { content:''; position: fixed; pointer-events:none; width:420px; height:420px; right:-100px; top:-60px; background: radial-gradient(circle at 30% 30%, rgba(37,99,235,0.06), transparent 30%); filter: blur(30px); z-index:0 }
+.stApp::after { content:''; position: fixed; pointer-events:none; width:520px; height:520px; left:-160px; bottom:-120px; background: radial-gradient(circle at 70% 70%, rgba(124,58,237,0.04), transparent 30%); filter: blur(38px); z-index:0 }
+
+/* Gentle floating/parallax animations for decorative shapes (dark) */
+@keyframes floatDarkA {
+  0% { transform: translate3d(0,0,0); }
+  50% { transform: translate3d(-22px, 14px, 0); }
+  100% { transform: translate3d(0,0,0); }
+}
+@keyframes floatDarkB {
+  0% { transform: translate3d(0,0,0); }
+  50% { transform: translate3d(30px, -20px, 0); }
+  100% { transform: translate3d(0,0,0); }
+}
+
+.stApp::before { will-change: transform; animation: floatDarkA 22s ease-in-out infinite; }
+.stApp::after { will-change: transform; animation: floatDarkB 30s ease-in-out infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  .stApp::before, .stApp::after { animation: none !important; transform: none !important }
+}
+
+/* Increase main content width slightly and ensure stacking */
+.block-container { max-width:980px !important; margin: 26px auto !important }
+.block-container, .stSidebar { position: relative; z-index: 1 }
+
+/* Button polish */
+.stButton>button { border-radius: 999px !important; padding: 8px 14px !important }
+
+@media (max-width: 640px) {
+  .hero { flex-direction: column; align-items: flex-start; gap:8px }
+  .hero-right { width:100%; text-align:left }
+}
