@@ -1,0 +1,13 @@
+streamlit
+langchain-community
+vaderSentiment
+textblob
+requests
+python-dotenv
+transformers
+torch
+datasets
+accelerate
+peft
+bitsandbytes
+datasets
